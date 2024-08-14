@@ -1,0 +1,98 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #101010;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    font-weight: 500;
+    color: #646cff;
+    text-decoration: inherit;
+}
+a:hover {
+    color: #535bf2;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+}
+
+.custom-button {
+    border-radius: 5px;
+    border: 0px solid black;
+    padding: 0.3em 1em;
+    font-size: 1em;
+    font-weight: 300;
+    font-family: inherit;
+    background-color: #101010;
+    cursor: pointer;
+    transition: 0.1s, scale 0.2s;
+}
+
+.custom-button:hover {
+    margin-left: 2rem;
+    margin-right: 0.2rem;
+    scale: 1.4;
+    font-weight: 500;
+    background-color: #84a98c;
+    color: #000000;
+    border-color: #646cff;
+}
+.custom-button:focus,
+.custom-button:focus-visible {
+    background-color: #84a98c;
+    outline: 3px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        color: #213547;
+        background-color: #ffffff;
+    }
+    a:hover {
+        color: #747bff;
+    }
+    button {
+        background-color: #f9f9f9;
+    }
+}
+.navbar-container {
+    margin-top: 1em;
+    padding: 0 2em 0 2em;
+    display: flex;
+}
+.navbar-title {
+    align-items: flex-start;
+    margin-right: auto;
+}
+
+.navbar-buttons-container {
+    display: flex;
+    backdrop-filter: drop-shadow(4px 4px 10px blue), blur(10px);
+    gap: 10px;
+}
+
+.flex {
+    display: flex;
+}
+.overflow-hidden {
+    overflow: hidden;
+}
